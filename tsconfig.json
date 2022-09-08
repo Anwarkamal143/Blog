@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@actions": ["src/Actions"],
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+      "@routes/*": ["src/routes/*"],
+      "@lib/*": ["src/lib/*"],
+      "@hooks": ["src/hooks"],
+      "@components": ["src/components"],
+      "@layouts": ["src/layouts"],
+      "@layouts/*": ["src/layouts/*"],
+      "@screens": ["src/screens"],
+      "@animations": ["src/animations"],
+      "@features/*": ["src/features/*"],
+      "@icons": ["src/assets/icons"],
+
+      "@assets/*": ["src/assets/*"],
+      "@pages/*": ["pages/*"],
+      "@styled": ["src/styled"],
+      "@reducers": ["src/redux/reducers"],
+      "@reducers/*": ["src/redux/reducers/*"],
+      "@redux": ["src/redux"],
+      "@redux/*": ["src/redux/*"],
+      "@static/*": ["public/*"],
+      "@styled/*": ["src/Styled/*"],
+      "@styles/*": ["src/styles/*"],
+      "@test/*": ["test/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
